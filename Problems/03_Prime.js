@@ -1,8 +1,13 @@
 
-// n > 2
 
 function Prime(n){
-  for ( let i = 2 ; i < n ; i++ ){
+  if( n < 2 ) {
+    return "Non-Prime"
+  }
+  
+  // for ( let i = 2 ; i < n ; i++ ){
+  
+  for ( let i = 2 ; i < Math.sqrt(n) ; i++ ){
     if ( n % i === 0 ) return "Non Prime"
   }
   return "Prime"
