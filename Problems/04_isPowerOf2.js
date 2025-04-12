@@ -1,13 +1,25 @@
-function PowerOf2( n ) {
-  if ( n < 1 ) return false;
+// Brute Force
 
-  while( n >= 2 ) {
-    if( n % 2 !== 0 ){
-      return false;
-    }
-    n /= 2;
+// function PowerOf2( n ) {
+//   if ( n < 1 ) return false;
+
+//   while( n >= 2 ) {
+//     if( n % 2 !== 0 ){
+//       return false;
+//     }
+//     n /= 2;
+//   }
+//   return true;
+// }
+
+// Bitwise Operator
+
+function PowerOf2(n){
+  if ( n < 1 ) return false;
+  if(( n & ( n - 1 ) ) === 0 ) {
+    return true;
   }
-  return true;
+  return false;
 }
 
 console.log(PowerOf2(2)); // true
