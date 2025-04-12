@@ -8,6 +8,7 @@ function Prime(n){
   return "Prime"
 }
 
-console.log(Prime(3));
-console.log(Prime(12));
-console.log(Prime(99));
+console.log(Prime(3)); // Prime
+console.log(Prime(12)); // Non-Prime
+console.log(Prime(99)); // Non-Prime
+
