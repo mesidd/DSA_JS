@@ -1,4 +1,4 @@
-## Target 450 DSA Problems
+## Data Structures & Algorithms
 
 To keep record of my progress,
 
