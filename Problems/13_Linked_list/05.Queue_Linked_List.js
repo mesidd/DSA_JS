@@ -4,10 +4,10 @@ class LinkedListQueue{
   constructor(){
     this.list = new LinkedList();
   }
-  push(value){
+  enqueue(value){
     this.list.append(value);
   }
-  pop(){
+  dequeue(){
     this.list.removeFromFront();
   }
   print(){
