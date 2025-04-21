@@ -20,9 +20,9 @@ countBits(n){
   let count = 0;
   for( let i = 0; i <= n; i++){
     let num = i;
-    while( num > 0 ){
-      count += num & 1;
-      num >>= 1;
+     while( num > 0 ){
+       count += num & 1;
+       num >>= 1;
   }
   arr.push(count);
   }
